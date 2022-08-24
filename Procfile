@@ -1,0 +1,1 @@
+web: java -jar target/dinothon-1.0.jar
