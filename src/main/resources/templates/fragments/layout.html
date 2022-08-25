@@ -1,16 +1,15 @@
 <!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" >
 <html th:fragment="layout (template, menu)">
 <head>
-    <title>Java Getting Started on Heroku</title>
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+	<meta charset="UTF-8">
+	<title th:text="Dinothon"></title>
+	<link rel="stylesheet" th:href="@{/stylesheets/bootstrap.min.css}">
+	<link rel="stylesheet" th:href="@{/stylesheets/main.css}" />
 </head>
 
 <body>
     
     <div th:replace="${template}"/>
 
-    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-    <script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
-    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
 </body>

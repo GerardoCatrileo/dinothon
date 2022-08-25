@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" th:href="@{/stylesheets/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/stylesheets/main.css}" />
+</head>
+<body>
+	<div class="jumbotron text-center">
+	  <div class="container">
+	    <a href="/" class="lang-logo">
+	      <img src="/dinothon.png"> 
+	    </a>
+	     <H1>
+	      	DINOTHON
+	      </H1>
+	      <H2>
+	      	Hackathon Falabella 2022
+	      </H2>
+	    
+	  </div>
+	</div>
+	<div class="container">
+		<form th:action="@{/buscar}" th:object="${despacho}" method="post">
+			<div class="form-group row">
+				<label for="nombre" class="col-form-label col-sm-2">F12:</label>
+				<div class="col-sm-4">
+					<input type="text" id="f12" th:field="*{f12}" class="form-control" placeholder="12XXXXXXXXXX">
+				</div>
+				<div th:if="${#fields.hasErrors('f12')}" th:errors="*{f12}" class="alert alert-danger"></div>
+			</div>
+			<div class="form-group row">
+				<div class="col-sm-4">
+					<input type="submit" value="Enviar" class="btn btn-primary">
+				</div>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>
