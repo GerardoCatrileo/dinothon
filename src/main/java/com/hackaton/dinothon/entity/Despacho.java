@@ -7,9 +7,9 @@ public class Despacho {
 	private String canal;
 	private String norden;
 	private String f12;
-	private int id_direc;
-	private int id_transp;
-	private int id_zona;
+	private Integer id_direc;
+	private Integer id_transp;
+	private Integer id_zona;
 	
 
 

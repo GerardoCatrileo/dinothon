@@ -2,72 +2,104 @@ package com.hackaton.dinothon.entity;
 
 public class Orden {
 
-	private int id_orden;
 	private String norden;
-	private String negocio;
-	private String canal;
-	private String num_orden;
-	private int id_cliente;
-	private int id_desp;
-
-	public int getId_orden() {
-		return id_orden;
-	}
-
-	public void setId_orden(int id_orden) {
-		this.id_orden = id_orden;
-	}
-
-	public String getNorden() {
-		return norden;
-	}
-
-	public void setNorden(String norden) {
-		this.norden = norden;
-	}
-
-	public String getNegocio() {
-		return negocio;
-	}
-
-	public void setNegocio(String negocio) {
-		this.negocio = negocio;
-	}
-
-	public String getCanal() {
-		return canal;
-	}
-
-	public void setCanal(String canal) {
-		this.canal = canal;
-	}
-
-	public String getNum_orden() {
-		return num_orden;
-	}
-
-	public void setNum_orden(String num_orden) {
-		this.num_orden = num_orden;
-	}
-
-	public int getId_cliente() {
-		return id_cliente;
-	}
-
-	public void setId_cliente(int id_cliente) {
-		this.id_cliente = id_cliente;
-	}
-
-	public int getId_desp() {
-		return id_desp;
-	}
-
-	public void setId_desp(int id_desp) {
-		this.id_desp = id_desp;
-	}
-
+	private String f12;
+	private String estadoF12;
+	private String nomCli;
+	private String celCli;
+	private String dirCli;
+	private String numDirCli;
+	private String comuna;
+	private String sku;
+	private String descSku;
+	private String tamanoSku;
+	private String cantidadSku;
+	private Integer id_desp;
+	
 	public Orden() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	public String getNorden() {
+		return norden;
+	}
+	public void setNorden(String norden) {
+		this.norden = norden;
+	}
+	public String getF12() {
+		return f12;
+	}
+	public void setF12(String f12) {
+		this.f12 = f12;
+	}
+	public String getEstadoF12() {
+		return estadoF12;
+	}
+	public void setEstadoF12(String estadoF12) {
+		this.estadoF12 = estadoF12;
+	}
+	public String getNomCli() {
+		return nomCli;
+	}
+	public void setNomCli(String nomCli) {
+		this.nomCli = nomCli;
+	}
+	public String getCelCli() {
+		return celCli;
+	}
+	public void setCelCli(String celCli) {
+		this.celCli = celCli;
+	}
+	public String getDirCli() {
+		return dirCli;
+	}
+	public void setDirCli(String dirCli) {
+		this.dirCli = dirCli;
+	}
+	public String getNumDirCli() {
+		return numDirCli;
+	}
+	public void setNumDirCli(String numDirCli) {
+		this.numDirCli = numDirCli;
+	}
+	public String getComuna() {
+		return comuna;
+	}
+	public void setComuna(String comuna) {
+		this.comuna = comuna;
+	}
+	public String getSku() {
+		return sku;
+	}
+	public void setSku(String sku) {
+		this.sku = sku;
+	}
+	public String getDescSku() {
+		return descSku;
+	}
+	public void setDescSku(String descSku) {
+		this.descSku = descSku;
+	}
+	public String getTamanoSku() {
+		return tamanoSku;
+	}
+	public void setTamanoSku(String tamanoSku) {
+		this.tamanoSku = tamanoSku;
+	}
+	public String getCantidadSku() {
+		return cantidadSku;
+	}
+	public void setCantidadSku(String cantidadSku) {
+		this.cantidadSku = cantidadSku;
+	}
 
+	public Integer getId_desp() {
+		return id_desp;
+	}
+
+	public void setId_desp(Integer id_desp) {
+		this.id_desp = id_desp;
+	}
+	
+	
 }

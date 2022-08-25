@@ -8,4 +8,20 @@
 	  <result	property="f12" 		column="n_f12" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
 	</resultMap>
 	
+	<resultMap id="ocMap" type="com.hackaton.dinothon.entity.Orden" >
+	  <id 		property="id_desp" 			column="id_despacho" 	javaType="java.lang.Integer"/>
+	  <result	property="f12" 				column="n_f12" 		javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="norden" 			column="n_orden" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="estadoF12" 		column="n_estado" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="nomCli" 			column="a_nombre" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="celCli" 			column="a_celular" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="dirCli" 			column="a_calle" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="numDirCli" 		column="a_numero" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="comuna" 			column="a_comuna" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="sku" 				column="n_sku" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="descSku" 			column="a_nombre_producto" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="tamanoSku" 		column="a_tamano" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	  <result	property="cantidadSku" 		column="n_cantidad" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
+	</resultMap>
+	
 </mapper>
