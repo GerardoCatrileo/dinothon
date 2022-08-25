@@ -2,16 +2,31 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title th:text="${titulo}"></title>
-<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<title th:text="Dinothon"></title>
+<link rel="stylesheet" th:href="@{/stylesheets/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/stylesheets/main.css}" />
 </head>
 <body>
+	<div class="jumbotron text-center">
+	  <div class="container">
+	    <a href="/" class="lang-logo">
+	      <img src="/dinothon.png"> 
+	    </a>
+	     <H1>
+	      	DINOTHON
+	      </H1>
+	      <H2>
+	      	Hackathon Falabella 2022
+	      </H2>
+	    
+	  </div>
+	</div>
 
 	<div class="container">
-	    <a th:href="@{/form}" class="btn btn-success btn-lg my-3">volver</a>
+	    <a th:href="@{/}" class="btn btn-success btn-lg my-3">volver</a>
 		<ul class="list-group my-2">
 			<li class="list-group-item active" th:text="${titulo}"></li>
-			<li class="list-group-item" th:text="${usuario.nombre}"></li>
+			<li class="list-group-item" th:text="${despacho.f12}"></li>
 			
 		</ul>
 	</div>
