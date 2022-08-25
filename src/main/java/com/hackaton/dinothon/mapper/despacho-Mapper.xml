@@ -3,14 +3,9 @@
 	<mapper namespace="com.hackaton.dinothon.mapper.DespachoMapper">
 		
 
-	<resultMap id="DespachoMap" type="com.hackaton.dinothon.entity.Despacho" >
-	  <id 		property="id_desp" 		column="id_despacho" 	javaType="java.lang.Long"/>
+	<resultMap id="despachoMap" type="com.hackaton.dinothon.entity.Despacho" >
+	  <id 		property="id_desp" 		column="id_despacho" 	javaType="java.lang.Integer"/>
 	  <result	property="f12" 		column="n_f12" 	javaType="java.lang.String" 	jdbcType="VARCHAR"/>
 	</resultMap>
 	
-	 <select id = "getDespachoByF12" resultMap="DespachoMap" flushCache="true">
-        select id_despacho, n_f12 from hck_despacho hd
-		where n_f12 = #{f12}
-    </select>
-
 </mapper>

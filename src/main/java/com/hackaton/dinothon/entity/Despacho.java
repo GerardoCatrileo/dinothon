@@ -2,7 +2,7 @@ package com.hackaton.dinothon.entity;
 
 public class Despacho {
 
-	private int id_desp;
+	private Integer id_desp;
 	private String negocio;
 	private String canal;
 	private String norden;
@@ -11,13 +11,7 @@ public class Despacho {
 	private int id_transp;
 	private int id_zona;
 	
-	public int getId_desp() {
-		return id_desp;
-	}
 
-	public void setId_desp(int id_desp) {
-		this.id_desp = id_desp;
-	}
 
 	public String getNegocio() {
 		return negocio;
@@ -77,6 +71,14 @@ public class Despacho {
 
 	public Despacho() {
 		// TODO Auto-generated constructor stub
+	}
+
+	public Integer getId_desp() {
+		return id_desp;
+	}
+
+	public void setId_desp(Integer id_desp) {
+		this.id_desp = id_desp;
 	}
 
 }
