@@ -1,4 +1,4 @@
-package com.hackaton.dinothon.dinothon.entity;
+package com.hackaton.dinothon.entity;
 
 import java.util.Date;
 

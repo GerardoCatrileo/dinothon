@@ -1,4 +1,4 @@
-package com.hackaton.dinothon.dinothon;
+package com.hackaton.dinothon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

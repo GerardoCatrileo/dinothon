@@ -1,4 +1,4 @@
-package com.hackaton.dinothon.dinothon;
+package com.hackaton.dinothon;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
